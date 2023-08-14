@@ -5,7 +5,7 @@ const { SITE_NAME } = process.env;
 export default async function Navbar() {
 
   return (
-    <nav className="relative flex items-center justify-start p-4 lg:px-6">
+    <nav className="relative flex items-center justify-start p-4 lg:px-6 header">
       <div className="flex w-full md:w-1/3">
         <Link
           href="/"
@@ -14,32 +14,24 @@ export default async function Navbar() {
         >
           <LogoSquare />
           <div className="ml-2 flex-none text-sm font-medium uppercase md:hidden lg:block">
-            ACME STORE
+            GURUFIN Wallet
           </div>
         </Link>
         <ul className="hidden gap-6 text-sm md:flex md:items-center">
-          <li>
+          {/* <li>
             <Link
-              href="#"
+              href="/policy"
               className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
             >
-              Menu01
+              Privacy Policy
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
-              href="#"
+              href="/outUser"
               className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
             >
-              Menu02
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#"
-              className="text-neutral-500 underline-offset-4 hover:text-black hover:underline dark:text-neutral-400 dark:hover:text-neutral-300"
-            >
-              Menu03
+              Delete Account
             </Link>
           </li>
         </ul>
